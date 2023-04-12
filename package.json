@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "generate": "kubb --debug"
+  },
+  "devDependencies": {
+    "@kubb/cli": "latest",
+    "@kubb/core": "latest",
+    "@kubb/swagger": "latest",
+    "@kubb/swagger-client": "latest",
+    "@kubb/swagger-tanstack-query": "latest",
+    "@kubb/swagger-ts": "latest"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^4.28.0"
+  }
+}
