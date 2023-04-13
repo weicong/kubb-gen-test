@@ -6,6 +6,10 @@ export type RoleEditDto = {
     /**
     * @type string
     */
+    name: string;
+    /**
+    * @type string
+    */
     displayName: string;
     /**
     * @type string | undefined
@@ -14,5 +18,5 @@ export type RoleEditDto = {
     /**
     * @type boolean | undefined
     */
-    isDefault?: boolean | undefined;
+    isStatic?: boolean | undefined;
 };

@@ -9,34 +9,35 @@ export default defineConfig(async () => {
 
   return {
     root: ".",
-    // input: { path: "petStore.yaml" },
     input: { path: "swagger.json" },
     output: { path: "./src/api", clean: true },
     plugins: [
       createSwagger({ output: false }),
       createSwaggerTS({
         output: "models",
-        groupBy: { type: "tag", output: "models/{{tag}}" },
+        groupBy: {
+          type: "tag",
+          output: "models/{{tag}}Models",
+          exportAs: "{{tag}}Models",
+        },
         enumType: "enum",
       }),
       createSwaggerClient({
         output: "clients",
         groupBy: {
           type: "tag",
-          output: "clients/{{tag}}",
-          exportAs: "{{tag}}Service", // BUG: doesn't work
+          output: "clients/{{tag}}Service",
+          exportAs: "{{tag}}Service",
         },
-        exportAs: "{{tag}}Service", // BUG: doesn't work
         client,
       }),
       createSwaggerTanstackQuery({
         output: "hooks",
         groupBy: {
           type: "tag",
-          output: "hooks/{{tag}}",
-          exportAs: "{{tag}}Hooks", // BUG: doesn't work
+          output: "hooks/{{tag}}Hooks",
+          exportAs: "{{tag}}Hooks",
         },
-        exportAs: "{{tag}}Hooks", // BUG: doesn't work
         client,
       }),
     ],

@@ -1,1 +1,0 @@
-export type DefinitionsString = string;

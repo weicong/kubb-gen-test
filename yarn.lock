@@ -108,12 +108,12 @@
   integrity sha512-4JQNk+3mVzK3xh2rqd6RB4J46qUR19azEHBneZyTZM+c456qOrbbM/5xcR8huNCCcbVt7+UmizG6GuUvPvKUYg==
 
 "@kubb/cli@latest":
-  version "1.0.0-beta.13"
-  resolved "https://registry.npmmirror.com/@kubb/cli/-/cli-1.0.0-beta.13.tgz#9fe33037c254ebdca36c8fc1400468693754bdc7"
-  integrity sha512-bACUI6FhEn736PeUgEpa4cVIiOZliI2D7XAzRK9fYXeSvdLuVBJrquMO1+lPZGdv3wXJDgroQm+P5lu9rzCk4A==
+  version "1.0.0-beta.14"
+  resolved "https://registry.npmmirror.com/@kubb/cli/-/cli-1.0.0-beta.14.tgz#d35fb58a1e758366e656561aa6da1c58ebf66269"
+  integrity sha512-4wWI834kfz1t+mE2fDRfVkei/1/xnpceNDRcOgtYpcbz9HS/T9/dux+01fIFGO6ZR1BX4CgptNmXWYZxHA86eg==
   dependencies:
     "@humanwhocodes/module-importer" "^1.0.1"
-    "@kubb/core" "1.0.0-beta.13"
+    "@kubb/core" "1.0.0-beta.14"
     "@swc/core" "^1.3.49"
     chokidar "^3.5.3"
     commander "^10.0.0"
@@ -126,10 +126,10 @@
     string-argv "^0.3.1"
     ts-node "^10.9.1"
 
-"@kubb/core@1.0.0-beta.13", "@kubb/core@latest":
-  version "1.0.0-beta.13"
-  resolved "https://registry.npmmirror.com/@kubb/core/-/core-1.0.0-beta.13.tgz#f90d70916f3e6f8a3e3c6020880084bdfbc55c16"
-  integrity sha512-CrLtzD2BPm9h9C4wf4L2eSdu2VRcGbPjLrUol4A1qC9IhlwlE6jWXhxlqNyW11XZV1qC2dy5OAlPHd3ogOPuDA==
+"@kubb/core@1.0.0-beta.14", "@kubb/core@latest":
+  version "1.0.0-beta.14"
+  resolved "https://registry.npmmirror.com/@kubb/core/-/core-1.0.0-beta.14.tgz#6c7c086443eafae8d40f23842a86856318b8b73f"
+  integrity sha512-KtkygHzw5r8jiw5AE6R5/8kMfutcphqcH8aAdKqH79qJKMYntgtzIijoraEjwQFc+QOuaWK9qWgDUvM+1rwi5Q==
   dependencies:
     change-case "^4.1.2"
     directory-tree "^3.5.1"
@@ -137,61 +137,61 @@
     rimraf "^3.0.2"
     uuid "^9.0.0"
 
-"@kubb/swagger-client@1.0.0-beta.13", "@kubb/swagger-client@latest":
-  version "1.0.0-beta.13"
-  resolved "https://registry.npmmirror.com/@kubb/swagger-client/-/swagger-client-1.0.0-beta.13.tgz#529e87f0db493df75e49821d62f88828b5d6095e"
-  integrity sha512-U4WIw0Q58kGyPcPMs24I3PgUfGKL2sotv2IpKXN3nrFevPQP28icwsBediyAk3lmF5JGkGtyXzRrZ1J4vJ8P9A==
+"@kubb/swagger-client@1.0.0-beta.14", "@kubb/swagger-client@latest":
+  version "1.0.0-beta.14"
+  resolved "https://registry.npmmirror.com/@kubb/swagger-client/-/swagger-client-1.0.0-beta.14.tgz#9992b083c66f482da8d532e2ad19186454d9957e"
+  integrity sha512-X8cEbwM/5XQNbdqQXv+VhX2cwC3AUUw/0Zjt+02qieCdSLj8Xr2r0N7mx/iwh1hnCm60vmWgHqqxUii2Uki9gA==
   dependencies:
-    "@kubb/core" "1.0.0-beta.13"
-    "@kubb/swagger" "1.0.0-beta.13"
-    "@kubb/swagger-ts" "1.0.0-beta.13"
-    "@kubb/ts-codegen" "1.0.0-beta.13"
+    "@kubb/core" "1.0.0-beta.14"
+    "@kubb/swagger" "1.0.0-beta.14"
+    "@kubb/swagger-ts" "1.0.0-beta.14"
+    "@kubb/ts-codegen" "1.0.0-beta.14"
     axios "^1.3.5"
     change-case "^4.1.2"
 
 "@kubb/swagger-tanstack-query@latest":
-  version "1.0.0-beta.13"
-  resolved "https://registry.npmmirror.com/@kubb/swagger-tanstack-query/-/swagger-tanstack-query-1.0.0-beta.13.tgz#8c6eb23c607724d95d71075204af02908075aafd"
-  integrity sha512-LHS6oMhZcPPsWJD34vHswwg4EzLNxz5Jhmf7rp+zgpj5IdN7Knd6Sbt9N+YcD45a8mZyI7Z2rjoQggcdbFxTng==
+  version "1.0.0-beta.14"
+  resolved "https://registry.npmmirror.com/@kubb/swagger-tanstack-query/-/swagger-tanstack-query-1.0.0-beta.14.tgz#3552369066089526a59d36bd1193697d9fc9faa1"
+  integrity sha512-wc5fWp9T2fwxzZJCppLOBBlHABuNAOmc76D2RVh0jBNddQKh4qYKQcwm4nNupDdPW34TjNswYy4Zn252Vj9LRg==
   dependencies:
-    "@kubb/core" "1.0.0-beta.13"
-    "@kubb/swagger" "1.0.0-beta.13"
-    "@kubb/swagger-client" "1.0.0-beta.13"
-    "@kubb/swagger-ts" "1.0.0-beta.13"
-    "@kubb/ts-codegen" "1.0.0-beta.13"
+    "@kubb/core" "1.0.0-beta.14"
+    "@kubb/swagger" "1.0.0-beta.14"
+    "@kubb/swagger-client" "1.0.0-beta.14"
+    "@kubb/swagger-ts" "1.0.0-beta.14"
+    "@kubb/ts-codegen" "1.0.0-beta.14"
     change-case "^4.1.2"
 
-"@kubb/swagger-ts@1.0.0-beta.13", "@kubb/swagger-ts@latest":
-  version "1.0.0-beta.13"
-  resolved "https://registry.npmmirror.com/@kubb/swagger-ts/-/swagger-ts-1.0.0-beta.13.tgz#c9c3dfc3f911335f13d12cfbaa0b3429c15f43e9"
-  integrity sha512-jPg1iyg99q/WsKVVOmGIfbfdzLc5tXJFhVxydm+5TOdx0rQHhL4fUaUeOlW2Ivs7VXxBz6KxG0kIJJO5IRd2WA==
+"@kubb/swagger-ts@1.0.0-beta.14", "@kubb/swagger-ts@latest":
+  version "1.0.0-beta.14"
+  resolved "https://registry.npmmirror.com/@kubb/swagger-ts/-/swagger-ts-1.0.0-beta.14.tgz#258db405b4e2623513c271b763e42db1002ae8f3"
+  integrity sha512-P9NXt7mjResOCJHOejQLkh9F4pkTb1Adfc4lodgOS++8/0Lg+OY8kaauYjHPz1yTuyKrfLiNJywseNFZWnFvEA==
   dependencies:
-    "@kubb/core" "1.0.0-beta.13"
-    "@kubb/swagger" "1.0.0-beta.13"
-    "@kubb/ts-codegen" "1.0.0-beta.13"
+    "@kubb/core" "1.0.0-beta.14"
+    "@kubb/swagger" "1.0.0-beta.14"
+    "@kubb/ts-codegen" "1.0.0-beta.14"
     change-case "^4.1.2"
     lodash.uniq "^4.5.0"
     typescript "^5.0.4"
 
-"@kubb/swagger@1.0.0-beta.13", "@kubb/swagger@latest":
-  version "1.0.0-beta.13"
-  resolved "https://registry.npmmirror.com/@kubb/swagger/-/swagger-1.0.0-beta.13.tgz#15cfa913aaa0cc03325edb737b1bfac8fbf36969"
-  integrity sha512-zMnKgsR88JEtbzh7tLykjaaPy2CqCJWmbAaynLWWyZXaaSn3ufeqXbjsY9DIJIjV32e0Hk4WOohRWEd6/5gbEQ==
+"@kubb/swagger@1.0.0-beta.14", "@kubb/swagger@latest":
+  version "1.0.0-beta.14"
+  resolved "https://registry.npmmirror.com/@kubb/swagger/-/swagger-1.0.0-beta.14.tgz#85cd33a324e3496fc9e99d52aaf274ee427d01dd"
+  integrity sha512-2RO1CpZeUIFPZI8QF+SL64Y/vyYjYoOf2f13hUkXgt0xScdnYZ8ZEltoYqqf4gPBs9uyL3cM6tzroY1Pnt/aiw==
   dependencies:
     "@apidevtools/swagger-parser" "^10.1.0"
-    "@kubb/core" "1.0.0-beta.13"
+    "@kubb/core" "1.0.0-beta.14"
     change-case "^4.1.2"
     lodash.get "^4.4.2"
     oas "^20.5.4"
     oas-normalize "^8.4.0"
     swagger2openapi "^7.0.8"
 
-"@kubb/ts-codegen@1.0.0-beta.13":
-  version "1.0.0-beta.13"
-  resolved "https://registry.npmmirror.com/@kubb/ts-codegen/-/ts-codegen-1.0.0-beta.13.tgz#055c27c96232946307dbc71b10b75df97537a043"
-  integrity sha512-MSU+LVmaOk6lcP12MtF8p2sHLB0W7HCrcR6XKnj2IwGCTsEgreOaa7INPKRp7fTO1H/sJfejtgbi2IKC5pRVpw==
+"@kubb/ts-codegen@1.0.0-beta.14":
+  version "1.0.0-beta.14"
+  resolved "https://registry.npmmirror.com/@kubb/ts-codegen/-/ts-codegen-1.0.0-beta.14.tgz#d1f178131a44c8b1e327ab92cc2395b8ab6cc0c4"
+  integrity sha512-f4K1WcDEJkq08YYRog198Ucjmqtf40V3/sPsGi7Q6Cl9J/1ar3eOheFbcz8IxGeEkCCF9JfpJL+FcptMQeoXJg==
   dependencies:
-    "@kubb/core" "1.0.0-beta.13"
+    "@kubb/core" "1.0.0-beta.14"
     typescript "^5.0.4"
 
 "@readme/better-ajv-errors@^1.6.0":

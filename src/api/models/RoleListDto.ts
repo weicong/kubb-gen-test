@@ -1,5 +1,9 @@
 export type RoleListDto = {
     /**
+    * @type integer | undefined int32
+    */
+    id?: number | undefined;
+    /**
     * @type string | undefined
     */
     name?: string | undefined;
@@ -7,10 +11,6 @@ export type RoleListDto = {
     * @type string | undefined
     */
     displayName?: string | undefined;
-    /**
-    * @type string | undefined
-    */
-    description?: string | undefined;
     /**
     * @type boolean | undefined
     */
@@ -23,12 +23,4 @@ export type RoleListDto = {
     * @type string | undefined date-time
     */
     creationTime?: string | undefined;
-    /**
-    * @type string | undefined date-time
-    */
-    lastModificationTime?: string | undefined;
-    /**
-    * @type integer | undefined int32
-    */
-    id?: number | undefined;
 };
