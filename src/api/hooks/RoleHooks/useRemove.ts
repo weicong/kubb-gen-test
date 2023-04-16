@@ -1,7 +1,7 @@
-
-import { useMutation, UseMutationOptions } from "@tanstack/react-query";
+import type { useMutation, UseMutationOptions } from "@tanstack/react-query";
 import client from "../../../utils/axios-client";
 import type { RemoveRequest, RemoveResponse, RemoveQueryParams } from "../../models/RoleModels/Remove";
+
 
         /**
 * @link /api/services/app/Role/Delete

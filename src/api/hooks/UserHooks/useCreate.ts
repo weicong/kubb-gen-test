@@ -1,7 +1,7 @@
-
-import { useMutation, UseMutationOptions } from "@tanstack/react-query";
+import type { useMutation, UseMutationOptions } from "@tanstack/react-query";
 import client from "../../../utils/axios-client";
 import type { CreateRequest, CreateResponse } from "../../models/UserModels/Create";
+
 
         /**
 * @link /api/services/app/User/Create

@@ -1,7 +1,7 @@
-
-import { useMutation, UseMutationOptions } from "@tanstack/react-query";
+import type { useMutation, UseMutationOptions } from "@tanstack/react-query";
 import client from "../../../utils/axios-client";
 import type { UpdateRequest, UpdateResponse } from "../../models/RoleModels/Update";
+
 
         /**
 * @link /api/services/app/Role/Update

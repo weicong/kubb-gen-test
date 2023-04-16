@@ -1,7 +1,7 @@
-
-import { useQuery, QueryKey, UseQueryResult, UseQueryOptions, QueryOptions } from "@tanstack/react-query";
+import type { useQuery, QueryKey, UseQueryResult, UseQueryOptions, QueryOptions } from "@tanstack/react-query";
 import client from "../../../utils/axios-client";
 import type { GetExternalAuthenticationProvidersResponse } from "../../models/TokenAuthModels/GetExternalAuthenticationProviders";
+
 
         export const getExternalAuthenticationProvidersQueryKey = () => [`/api/TokenAuth/GetExternalAuthenticationProviders`] as const;
       

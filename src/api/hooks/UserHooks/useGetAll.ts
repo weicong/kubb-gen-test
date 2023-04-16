@@ -1,7 +1,7 @@
-
-import { useQuery, QueryKey, UseQueryResult, UseQueryOptions, QueryOptions } from "@tanstack/react-query";
+import type { useQuery, QueryKey, UseQueryResult, UseQueryOptions, QueryOptions } from "@tanstack/react-query";
 import client from "../../../utils/axios-client";
 import type { GetAllResponse, GetAllQueryParams } from "../../models/UserModels/GetAll";
+
 
         export const getAllQueryKey = (params?: GetAllQueryParams) => [`/api/services/app/User/GetAll`, ...(params ? [params] : [])] as const;
       

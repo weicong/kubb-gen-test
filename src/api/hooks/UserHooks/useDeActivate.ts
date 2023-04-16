@@ -1,7 +1,7 @@
-
-import { useMutation, UseMutationOptions } from "@tanstack/react-query";
+import type { useMutation, UseMutationOptions } from "@tanstack/react-query";
 import client from "../../../utils/axios-client";
 import type { DeActivateRequest, DeActivateResponse } from "../../models/UserModels/DeActivate";
+
 
         /**
 * @link /api/services/app/User/DeActivate

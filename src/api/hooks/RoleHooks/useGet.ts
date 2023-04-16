@@ -1,7 +1,7 @@
-
-import { useQuery, QueryKey, UseQueryResult, UseQueryOptions, QueryOptions } from "@tanstack/react-query";
+import type { useQuery, QueryKey, UseQueryResult, UseQueryOptions, QueryOptions } from "@tanstack/react-query";
 import client from "../../../utils/axios-client";
 import type { GetResponse, GetQueryParams } from "../../models/RoleModels/Get";
+
 
         export const getQueryKey = (params?: GetQueryParams) => [`/api/services/app/Role/Get`, ...(params ? [params] : [])] as const;
       

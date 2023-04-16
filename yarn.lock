@@ -108,12 +108,12 @@
   integrity sha512-4JQNk+3mVzK3xh2rqd6RB4J46qUR19azEHBneZyTZM+c456qOrbbM/5xcR8huNCCcbVt7+UmizG6GuUvPvKUYg==
 
 "@kubb/cli@latest":
-  version "1.0.0-beta.14"
-  resolved "https://registry.npmmirror.com/@kubb/cli/-/cli-1.0.0-beta.14.tgz#d35fb58a1e758366e656561aa6da1c58ebf66269"
-  integrity sha512-4wWI834kfz1t+mE2fDRfVkei/1/xnpceNDRcOgtYpcbz9HS/T9/dux+01fIFGO6ZR1BX4CgptNmXWYZxHA86eg==
+  version "1.0.0-beta.15"
+  resolved "https://registry.npmmirror.com/@kubb/cli/-/cli-1.0.0-beta.15.tgz#67b61bc52339c5c1ec2e9669323f8e35fb697e05"
+  integrity sha512-rjkcyrZ7kZ2F7bTMvNLXkTp0JsXYHbZteXyBoGwwaxMROWN5IABKycNKkMgcUVetbNM4k1WuG6i0M8AbxFtlzA==
   dependencies:
     "@humanwhocodes/module-importer" "^1.0.1"
-    "@kubb/core" "1.0.0-beta.14"
+    "@kubb/core" "1.0.0-beta.15"
     "@swc/core" "^1.3.49"
     chokidar "^3.5.3"
     commander "^10.0.0"
@@ -126,72 +126,72 @@
     string-argv "^0.3.1"
     ts-node "^10.9.1"
 
-"@kubb/core@1.0.0-beta.14", "@kubb/core@latest":
-  version "1.0.0-beta.14"
-  resolved "https://registry.npmmirror.com/@kubb/core/-/core-1.0.0-beta.14.tgz#6c7c086443eafae8d40f23842a86856318b8b73f"
-  integrity sha512-KtkygHzw5r8jiw5AE6R5/8kMfutcphqcH8aAdKqH79qJKMYntgtzIijoraEjwQFc+QOuaWK9qWgDUvM+1rwi5Q==
+"@kubb/core@1.0.0-beta.15", "@kubb/core@latest":
+  version "1.0.0-beta.15"
+  resolved "https://registry.npmmirror.com/@kubb/core/-/core-1.0.0-beta.15.tgz#f5751751322e17971b7d90cd820e4b6352af1c1a"
+  integrity sha512-z7nPVQPw6lvr+mWYGzf1dB3isGcz10R2PQlNsQJingHN2nug8wrs7+SYvNOfjQnRtxUfTNNpuUn04rNFVcLTpA==
   dependencies:
+    "@kubb/ts-codegen" "1.0.0-beta.15"
     change-case "^4.1.2"
     directory-tree "^3.5.1"
     lodash.uniq "^4.5.0"
     rimraf "^3.0.2"
     uuid "^9.0.0"
 
-"@kubb/swagger-client@1.0.0-beta.14", "@kubb/swagger-client@latest":
-  version "1.0.0-beta.14"
-  resolved "https://registry.npmmirror.com/@kubb/swagger-client/-/swagger-client-1.0.0-beta.14.tgz#9992b083c66f482da8d532e2ad19186454d9957e"
-  integrity sha512-X8cEbwM/5XQNbdqQXv+VhX2cwC3AUUw/0Zjt+02qieCdSLj8Xr2r0N7mx/iwh1hnCm60vmWgHqqxUii2Uki9gA==
+"@kubb/swagger-client@1.0.0-beta.15", "@kubb/swagger-client@latest":
+  version "1.0.0-beta.15"
+  resolved "https://registry.npmmirror.com/@kubb/swagger-client/-/swagger-client-1.0.0-beta.15.tgz#20fff95a0468a88450cbbbe0bf4c5cb590babc17"
+  integrity sha512-sLg5yh1SDh4o1jRFNCVxUXCvv8Zm9PFV8xa7Kpv+qL2M53XJW6ZlXaUhJ35+Q4+NAfuyNiECINdJz1qjdsqp6A==
   dependencies:
-    "@kubb/core" "1.0.0-beta.14"
-    "@kubb/swagger" "1.0.0-beta.14"
-    "@kubb/swagger-ts" "1.0.0-beta.14"
-    "@kubb/ts-codegen" "1.0.0-beta.14"
+    "@kubb/core" "1.0.0-beta.15"
+    "@kubb/swagger" "1.0.0-beta.15"
+    "@kubb/swagger-ts" "1.0.0-beta.15"
+    "@kubb/ts-codegen" "1.0.0-beta.15"
     axios "^1.3.5"
     change-case "^4.1.2"
 
 "@kubb/swagger-tanstack-query@latest":
-  version "1.0.0-beta.14"
-  resolved "https://registry.npmmirror.com/@kubb/swagger-tanstack-query/-/swagger-tanstack-query-1.0.0-beta.14.tgz#3552369066089526a59d36bd1193697d9fc9faa1"
-  integrity sha512-wc5fWp9T2fwxzZJCppLOBBlHABuNAOmc76D2RVh0jBNddQKh4qYKQcwm4nNupDdPW34TjNswYy4Zn252Vj9LRg==
+  version "1.0.0-beta.15"
+  resolved "https://registry.npmmirror.com/@kubb/swagger-tanstack-query/-/swagger-tanstack-query-1.0.0-beta.15.tgz#74cfe84e3b7dcbe946d4254ac70336aaacfd540c"
+  integrity sha512-IC2QzCRSqSS2j9M7jYuhyfCl39GUCfmfESa8qdIWEsZl4T0ufnM2JFPOvM13h4eEbvHyXUykA/c8RGR3oYe3wg==
   dependencies:
-    "@kubb/core" "1.0.0-beta.14"
-    "@kubb/swagger" "1.0.0-beta.14"
-    "@kubb/swagger-client" "1.0.0-beta.14"
-    "@kubb/swagger-ts" "1.0.0-beta.14"
-    "@kubb/ts-codegen" "1.0.0-beta.14"
+    "@kubb/core" "1.0.0-beta.15"
+    "@kubb/swagger" "1.0.0-beta.15"
+    "@kubb/swagger-client" "1.0.0-beta.15"
+    "@kubb/swagger-ts" "1.0.0-beta.15"
+    "@kubb/ts-codegen" "1.0.0-beta.15"
     change-case "^4.1.2"
 
-"@kubb/swagger-ts@1.0.0-beta.14", "@kubb/swagger-ts@latest":
-  version "1.0.0-beta.14"
-  resolved "https://registry.npmmirror.com/@kubb/swagger-ts/-/swagger-ts-1.0.0-beta.14.tgz#258db405b4e2623513c271b763e42db1002ae8f3"
-  integrity sha512-P9NXt7mjResOCJHOejQLkh9F4pkTb1Adfc4lodgOS++8/0Lg+OY8kaauYjHPz1yTuyKrfLiNJywseNFZWnFvEA==
+"@kubb/swagger-ts@1.0.0-beta.15", "@kubb/swagger-ts@latest":
+  version "1.0.0-beta.15"
+  resolved "https://registry.npmmirror.com/@kubb/swagger-ts/-/swagger-ts-1.0.0-beta.15.tgz#d9cb7d841e1d6f18a1351b9f97d97d5b447eb584"
+  integrity sha512-Qd70kZ4rO+VU1yp+RqMBGI/wpU3bxL7e+kqz5SSRJoNZIugAxMYVZoyYFdeMP3i/07m/mypuOT9u62Yo/MRMtw==
   dependencies:
-    "@kubb/core" "1.0.0-beta.14"
-    "@kubb/swagger" "1.0.0-beta.14"
-    "@kubb/ts-codegen" "1.0.0-beta.14"
+    "@kubb/core" "1.0.0-beta.15"
+    "@kubb/swagger" "1.0.0-beta.15"
+    "@kubb/ts-codegen" "1.0.0-beta.15"
     change-case "^4.1.2"
     lodash.uniq "^4.5.0"
     typescript "^5.0.4"
 
-"@kubb/swagger@1.0.0-beta.14", "@kubb/swagger@latest":
-  version "1.0.0-beta.14"
-  resolved "https://registry.npmmirror.com/@kubb/swagger/-/swagger-1.0.0-beta.14.tgz#85cd33a324e3496fc9e99d52aaf274ee427d01dd"
-  integrity sha512-2RO1CpZeUIFPZI8QF+SL64Y/vyYjYoOf2f13hUkXgt0xScdnYZ8ZEltoYqqf4gPBs9uyL3cM6tzroY1Pnt/aiw==
+"@kubb/swagger@1.0.0-beta.15", "@kubb/swagger@latest":
+  version "1.0.0-beta.15"
+  resolved "https://registry.npmmirror.com/@kubb/swagger/-/swagger-1.0.0-beta.15.tgz#6cbbe942562a5df38afc76d352477fb3faffbfdd"
+  integrity sha512-99FDy91oxDM06x7A5aPsI/l9pVU2n2cnkuvkLTHpnmDmCF5zKX/UCvGzI7VNtxSCC8X8WaCxoTooW6QJoHUB6A==
   dependencies:
     "@apidevtools/swagger-parser" "^10.1.0"
-    "@kubb/core" "1.0.0-beta.14"
+    "@kubb/core" "1.0.0-beta.15"
     change-case "^4.1.2"
     lodash.get "^4.4.2"
     oas "^20.5.4"
     oas-normalize "^8.4.0"
     swagger2openapi "^7.0.8"
 
-"@kubb/ts-codegen@1.0.0-beta.14":
-  version "1.0.0-beta.14"
-  resolved "https://registry.npmmirror.com/@kubb/ts-codegen/-/ts-codegen-1.0.0-beta.14.tgz#d1f178131a44c8b1e327ab92cc2395b8ab6cc0c4"
-  integrity sha512-f4K1WcDEJkq08YYRog198Ucjmqtf40V3/sPsGi7Q6Cl9J/1ar3eOheFbcz8IxGeEkCCF9JfpJL+FcptMQeoXJg==
+"@kubb/ts-codegen@1.0.0-beta.15":
+  version "1.0.0-beta.15"
+  resolved "https://registry.npmmirror.com/@kubb/ts-codegen/-/ts-codegen-1.0.0-beta.15.tgz#b0aa1c2ea69967a331c7f241abab00145893f6c6"
+  integrity sha512-CcB2jXngtxaLXLItcz3+mMlCOXqv1W5R1nT5KvrPtca9c42lIMl1ar77NfYdjZO3vgcbSoT13eyPrgqQ9RAc5g==
   dependencies:
-    "@kubb/core" "1.0.0-beta.14"
     typescript "^5.0.4"
 
 "@readme/better-ajv-errors@^1.6.0":
@@ -242,71 +242,71 @@
     marked "^4.2.12"
     mustache "^4.2.0"
 
-"@swc/core-darwin-arm64@1.3.49":
-  version "1.3.49"
-  resolved "https://registry.npmmirror.com/@swc/core-darwin-arm64/-/core-darwin-arm64-1.3.49.tgz#bc52c5caff6e0ea04f5ed457ccd7904128632524"
-  integrity sha512-g7aIfXh6uPHmhLXdjXQq5t3HAyS/EdvujasW1DIS5k8UqOBaSoCcSGtLIjzcLv3KujqNfYcm118E+12H0nY6fQ==
+"@swc/core-darwin-arm64@1.3.50":
+  version "1.3.50"
+  resolved "https://registry.npmmirror.com/@swc/core-darwin-arm64/-/core-darwin-arm64-1.3.50.tgz#d665b79dc308dda2d250e44461edc7f7bb091f5e"
+  integrity sha512-riJGLORCFOMeUccEV0hzua0iyJFks7kef+5GfcmC93SLno+LHFDnaJ4mKVXcCAmQ7GYhVTPJs9gSHIW2fO5anQ==
 
-"@swc/core-darwin-x64@1.3.49":
-  version "1.3.49"
-  resolved "https://registry.npmmirror.com/@swc/core-darwin-x64/-/core-darwin-x64-1.3.49.tgz#d1da85440380bdf62b3cf273ad29be5575cd02d6"
-  integrity sha512-eSIxVX0YDw40Bre5sAx2BV3DzdIGzmQvCf2yiBvLqiiL6GC0mmuDeWbUCAzdUX6fJ6FUVEBMUVqNOc9oJ2/d5w==
+"@swc/core-darwin-x64@1.3.50":
+  version "1.3.50"
+  resolved "https://registry.npmmirror.com/@swc/core-darwin-x64/-/core-darwin-x64-1.3.50.tgz#8201b90f19b0cbec9099655600d52552c07ce592"
+  integrity sha512-XaAhpeUoAK8tOUYSXH/v35yEjIoSP6ClGV/EaqBmDuCzAPue6uJMlIAW+nTmdtqVm5ZNZy2cKtP4ZHhVlfl7xw==
 
-"@swc/core-linux-arm-gnueabihf@1.3.49":
-  version "1.3.49"
-  resolved "https://registry.npmmirror.com/@swc/core-linux-arm-gnueabihf/-/core-linux-arm-gnueabihf-1.3.49.tgz#d193089e02211dc7a11bff0a60ef098f7c487a26"
-  integrity sha512-8mj3IcRVr/OJY0mVITz6Z5osNAMJK5GiKDaZ+3QejPLbl6aiu4sH4GmTHDRN14RnaVXOpecsGcUoQmNoNa3u3w==
+"@swc/core-linux-arm-gnueabihf@1.3.50":
+  version "1.3.50"
+  resolved "https://registry.npmmirror.com/@swc/core-linux-arm-gnueabihf/-/core-linux-arm-gnueabihf-1.3.50.tgz#9ae3b044cbeb871df293f7b281a48e5b37a1c011"
+  integrity sha512-8hDtXs0T5biMtA3I21JQG1uxL+Hb/D2t0NZENuajVK5Vky3GXmf+ICVeQzwGzSXiyftaDgyNAvBidbKPBlNEtw==
 
-"@swc/core-linux-arm64-gnu@1.3.49":
-  version "1.3.49"
-  resolved "https://registry.npmmirror.com/@swc/core-linux-arm64-gnu/-/core-linux-arm64-gnu-1.3.49.tgz#c45102a93b8d7e67617f2d488549ad8d2bb26f73"
-  integrity sha512-Rmg9xw6tmpOpf6GKKjpHQGmjfHzqSths5ebI2ahrHlhekzZF2HYmPkVw4bHda8Bja6mbaw8FVBgBHjPU8mMeDA==
+"@swc/core-linux-arm64-gnu@1.3.50":
+  version "1.3.50"
+  resolved "https://registry.npmmirror.com/@swc/core-linux-arm64-gnu/-/core-linux-arm64-gnu-1.3.50.tgz#6598d5a2af6e5bc1e4ea4eff3c8c6f102fcee10f"
+  integrity sha512-iS908P5cNTHWus4QefSg2jn4lDYcl15sN1Fvx8fQgqYQra2O9CsR8lXBJYkvllykkzoKvWfcOLRCTquz3vsnVQ==
 
-"@swc/core-linux-arm64-musl@1.3.49":
-  version "1.3.49"
-  resolved "https://registry.npmmirror.com/@swc/core-linux-arm64-musl/-/core-linux-arm64-musl-1.3.49.tgz#391f20ff83b7195a2a1601e6cdb191e1b4fc112d"
-  integrity sha512-nlKPYMogAI3Aak6Mlkag8/2AlHAZ/DpH7RjhfMazsaGhD/sQOmYdyY9Al69ejpa419YJuREeeeLoojFlSsd30g==
+"@swc/core-linux-arm64-musl@1.3.50":
+  version "1.3.50"
+  resolved "https://registry.npmmirror.com/@swc/core-linux-arm64-musl/-/core-linux-arm64-musl-1.3.50.tgz#e9733c0d4df035c50faea05c8630e1db7605c1ed"
+  integrity sha512-ysh8MeaWjGqVwIPCDUhUOr4oczIx5qb8vFBoegI+SOUfcpWik22/+hG25LWzZY6PwAtqUGkhsJt/+5dY4IMhEA==
 
-"@swc/core-linux-x64-gnu@1.3.49":
-  version "1.3.49"
-  resolved "https://registry.npmmirror.com/@swc/core-linux-x64-gnu/-/core-linux-x64-gnu-1.3.49.tgz#36c7a165a0bbb763eaf7186eebd759731cb058d2"
-  integrity sha512-QOyeJQ6NVi73SJcizbwvIZTiGA/N+BxX9liRrvibumaQmRh8fWjJiLNsv3ODSHeuonak7E8Bf7a7NnSTyu48Mw==
+"@swc/core-linux-x64-gnu@1.3.50":
+  version "1.3.50"
+  resolved "https://registry.npmmirror.com/@swc/core-linux-x64-gnu/-/core-linux-x64-gnu-1.3.50.tgz#f1afb3e0f31fc7e936bcc38387302b94690e2f3a"
+  integrity sha512-Ci4LQaGIPweWNVWgR2f47nrYEfq7002Pj6WWKGrnO6g+k5cwR3izxHMOnZhcKyAD3cWOS904i/GbfgXs2wBCDQ==
 
-"@swc/core-linux-x64-musl@1.3.49":
-  version "1.3.49"
-  resolved "https://registry.npmmirror.com/@swc/core-linux-x64-musl/-/core-linux-x64-musl-1.3.49.tgz#6b9f85b45f116aaf909ed9ee8fe2d19e19fca8fb"
-  integrity sha512-WlDMz+SOpYC9O/ZBUw1oiyWI7HyUCMlf/HS8Fy/kRI3eGoGCUxVTCJ1mP57GdQr4Wg32Y/ZpO2KSNQFWnT8mAw==
+"@swc/core-linux-x64-musl@1.3.50":
+  version "1.3.50"
+  resolved "https://registry.npmmirror.com/@swc/core-linux-x64-musl/-/core-linux-x64-musl-1.3.50.tgz#fa93456591850caf76b15be99421af5d6fdf12a5"
+  integrity sha512-SEXOhGjmC4rdBeucCvNmtO2vflUEhkmWLfqvkalHYDbPMA/gwLSoYu3D85u5XqB8DatDi4TOCUx80IR1b/vDBQ==
 
-"@swc/core-win32-arm64-msvc@1.3.49":
-  version "1.3.49"
-  resolved "https://registry.npmmirror.com/@swc/core-win32-arm64-msvc/-/core-win32-arm64-msvc-1.3.49.tgz#f75c69cf5804543b74846b251dec3729466d691a"
-  integrity sha512-41LZOeI94Za3twib8KOIjnHYAZ+nkBFmboaREsFR1760S7jiMVywqWX8nFZvn/CXj15Fjjgdgyuig+zMREwXwQ==
+"@swc/core-win32-arm64-msvc@1.3.50":
+  version "1.3.50"
+  resolved "https://registry.npmmirror.com/@swc/core-win32-arm64-msvc/-/core-win32-arm64-msvc-1.3.50.tgz#7afd5754514232ba951e12ffce879d18192faee4"
+  integrity sha512-DPsJ2r9mYU8VzF9vhK323psyE8modj5be9M9diOsqF58Fu9ARtOfuulY+eiS5e41ya2XM/H2N/qOfsA+h2KRcg==
 
-"@swc/core-win32-ia32-msvc@1.3.49":
-  version "1.3.49"
-  resolved "https://registry.npmmirror.com/@swc/core-win32-ia32-msvc/-/core-win32-ia32-msvc-1.3.49.tgz#8fea171ef5fdc6983174560f0f72a30f6da0b6ba"
-  integrity sha512-IdqLPoMKssyAoOCZdNXmnAd6/uyx+Hb9KSfZUHepZaNfwMy6J5XXrOsbYs3v53FH8MtekUUdV+mMX4me9bcv9w==
+"@swc/core-win32-ia32-msvc@1.3.50":
+  version "1.3.50"
+  resolved "https://registry.npmmirror.com/@swc/core-win32-ia32-msvc/-/core-win32-ia32-msvc-1.3.50.tgz#4032d941a7afd81a7e959f82d6a5d910a116653a"
+  integrity sha512-2iyzHLat0C93S3XLp7QJ6RTA9Md+EcPl2fq1S/m2EZqofcq7wu5SuywaXoF89xOibOJBnWe6KwOnOFWFaXrPjQ==
 
-"@swc/core-win32-x64-msvc@1.3.49":
-  version "1.3.49"
-  resolved "https://registry.npmmirror.com/@swc/core-win32-x64-msvc/-/core-win32-x64-msvc-1.3.49.tgz#e5a4a3370bb55aac36e19d61ef43af6dcfe76c09"
-  integrity sha512-7Fqjo5pS3uIohhSbYSaR0+e/bJdxmQb4oG97FIh5qvlCCGQaQ9UiaEeYy4uK0Ad+Menum1IXCAEiG7RHcl6Eyw==
+"@swc/core-win32-x64-msvc@1.3.50":
+  version "1.3.50"
+  resolved "https://registry.npmmirror.com/@swc/core-win32-x64-msvc/-/core-win32-x64-msvc-1.3.50.tgz#3fa800cfc82a7f5140c8bba93aef686c3c1bb3d5"
+  integrity sha512-iFRU2Y5DVIEdjaWnlLij8QQBM5Q91UJotNNgzuevPSIOhOyhF6V2AQS1QC4mfkPCy3Bw0GrZDChu3GcuBj9Rzw==
 
 "@swc/core@^1.3.49":
-  version "1.3.49"
-  resolved "https://registry.npmmirror.com/@swc/core/-/core-1.3.49.tgz#98268739aaa998403669a563062c89fa30e9b39e"
-  integrity sha512-br44ZHOfE9YyRGcORSLkHFQHTvhwRcaithBJ1Q5y5iMGpLbH0Wai3GN49L60RvmGwxNJfWzT+E7+rNNR7ewKgA==
+  version "1.3.50"
+  resolved "https://registry.npmmirror.com/@swc/core/-/core-1.3.50.tgz#f0a49f87a39119a3643929dd4578e84f83f98fe0"
+  integrity sha512-soTAHlwkI8zukR9KftWZ0gZ7HKU99B/C3CtBxzSI3N23QG+EfSSOgrYARfuZk5g4yLWpsU0rEkojd78vixqkwg==
   optionalDependencies:
-    "@swc/core-darwin-arm64" "1.3.49"
-    "@swc/core-darwin-x64" "1.3.49"
-    "@swc/core-linux-arm-gnueabihf" "1.3.49"
-    "@swc/core-linux-arm64-gnu" "1.3.49"
-    "@swc/core-linux-arm64-musl" "1.3.49"
-    "@swc/core-linux-x64-gnu" "1.3.49"
-    "@swc/core-linux-x64-musl" "1.3.49"
-    "@swc/core-win32-arm64-msvc" "1.3.49"
-    "@swc/core-win32-ia32-msvc" "1.3.49"
-    "@swc/core-win32-x64-msvc" "1.3.49"
+    "@swc/core-darwin-arm64" "1.3.50"
+    "@swc/core-darwin-x64" "1.3.50"
+    "@swc/core-linux-arm-gnueabihf" "1.3.50"
+    "@swc/core-linux-arm64-gnu" "1.3.50"
+    "@swc/core-linux-arm64-musl" "1.3.50"
+    "@swc/core-linux-x64-gnu" "1.3.50"
+    "@swc/core-linux-x64-musl" "1.3.50"
+    "@swc/core-win32-arm64-msvc" "1.3.50"
+    "@swc/core-win32-ia32-msvc" "1.3.50"
+    "@swc/core-win32-x64-msvc" "1.3.50"
 
 "@tanstack/query-core@4.29.1":
   version "4.29.1"
@@ -314,9 +314,9 @@
   integrity sha512-vkPewLEG8ua0efo3SsVT0BcBtkq5RZX8oPhDAyKL+k/rdOYSQTEocfGEXSaBwIwsXeOGBUpfKqI+UmHvNqdWXg==
 
 "@tanstack/react-query@^4.28.0":
-  version "4.29.1"
-  resolved "https://registry.npmmirror.com/@tanstack/react-query/-/react-query-4.29.1.tgz#5f166aca63915c52f6eda930a54d6933bfd11d1b"
-  integrity sha512-/crv1v+OeuGG6EOvaQmyeo9GCKtH4jbmuhZkvk9ulufRiHcTr/A9+YP9GevEAZzUTdzXMwenpTbyxBGvG2xXvw==
+  version "4.29.3"
+  resolved "https://registry.npmmirror.com/@tanstack/react-query/-/react-query-4.29.3.tgz#037205560784ed4a5e3fd605a2143e325b6189fa"
+  integrity sha512-FPQrMu7PbCgBcVzoRJm7WmQnAFv+LUgZM9KBZ7Vk/+yERH2BDLvQRuAgczQd5Tb1s3HbOktECRDaOkUxdyBAjw==
   dependencies:
     "@tanstack/query-core" "4.29.1"
     use-sync-external-store "^1.2.0"
@@ -656,9 +656,9 @@ command-line-usage@^6.1.1:
     typical "^5.2.0"
 
 commander@^10.0.0:
-  version "10.0.0"
-  resolved "https://registry.npmmirror.com/commander/-/commander-10.0.0.tgz#71797971162cd3cf65f0b9d24eb28f8d303acdf1"
-  integrity sha512-zS5PnTI22FIRM6ylNW8G4Ap0IEOyk62fhLSD0+uHRT9McRCLGpkVNvao4bjimpK/GShynyQkFFxHhwMcETmduA==
+  version "10.0.1"
+  resolved "https://registry.npmmirror.com/commander/-/commander-10.0.1.tgz#881ee46b4f77d1c1dccc5823433aa39b022cbe06"
+  integrity sha512-y4Mg2tXshplEbSGzx7amzPwKKOCGuoSRP/CjEdwwk0FOGlUbq6lKuoyDZTNZkmxHdJtp54hdfY/JUrdL7Xfdug==
 
 compute-gcd@^1.2.1:
   version "1.2.1"
@@ -1355,9 +1355,9 @@ oas-validator@^5.0.8:
     yaml "^1.10.0"
 
 oas@^20.5.4:
-  version "20.5.4"
-  resolved "https://registry.npmmirror.com/oas/-/oas-20.5.4.tgz#dc75b13056d3dcbdbc6e9b39a5483b7edda89c08"
-  integrity sha512-GQt+TRlFOLbOYZdAsNkK3DXYT54yDSYL8chmA+S8foLCPdLBkFN5qwL95kwFCtM6y0SexfvkAob5vjtPh4w8uA==
+  version "20.6.0"
+  resolved "https://registry.npmmirror.com/oas/-/oas-20.6.0.tgz#3363239676785b952de6995bf9a8e1c40d593588"
+  integrity sha512-Ug99CKF0BdSfiznKza4pmL4mK2w+a+33M6+hzRkYYBwT5y8qVTEsXLvH4irlZqjzj9jm1Ws+bMCLOvf6MTbHXA==
   dependencies:
     "@readme/json-schema-ref-parser" "^1.2.0"
     "@types/json-schema" "^7.0.11"

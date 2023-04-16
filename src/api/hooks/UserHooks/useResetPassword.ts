@@ -1,7 +1,7 @@
-
-import { useMutation, UseMutationOptions } from "@tanstack/react-query";
+import type { useMutation, UseMutationOptions } from "@tanstack/react-query";
 import client from "../../../utils/axios-client";
 import type { ResetPasswordRequest, ResetPasswordResponse } from "../../models/UserModels/ResetPassword";
+
 
         /**
 * @link /api/services/app/User/ResetPassword
