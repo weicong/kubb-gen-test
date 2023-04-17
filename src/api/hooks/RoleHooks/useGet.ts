@@ -1,4 +1,4 @@
-import type { useQuery, QueryKey, UseQueryResult, UseQueryOptions, QueryOptions } from "@tanstack/react-query";
+import { useQuery, QueryKey, UseQueryResult, UseQueryOptions, QueryOptions } from "@tanstack/react-query";
 import client from "../../../utils/axios-client";
 import type { GetResponse, GetQueryParams } from "../../models/RoleModels/Get";
 
@@ -6,7 +6,7 @@ import type { GetResponse, GetQueryParams } from "../../models/RoleModels/Get";
         export const getQueryKey = (params?: GetQueryParams) => [`/api/services/app/Role/Get`, ...(params ? [params] : [])] as const;
       
 
-        export function getQueryOptions <TData = GetResponse>(params?: GetQueryParams): QueryOptions<TData> {
+        export function getQueryOptions <TData = GetResponse, TError = unknown>(params?: GetQueryParams): QueryOptions<TData, TError> {
           const queryKey =getQueryKey(params);
 
           return {
@@ -25,12 +25,12 @@ import type { GetResponse, GetQueryParams } from "../../models/RoleModels/Get";
         /**
 * @link /api/services/app/Role/Get
 */
-        export function useGet <TData = GetResponse, TError = unknown>(params?: GetQueryParams, options?: { query?: UseQueryOptions<TData> }): UseQueryResult<TData, TError> & { queryKey: QueryKey } {
+        export function useGet <TData = GetResponse, TError = unknown>(params?: GetQueryParams, options?: { query?: UseQueryOptions<TData, TError> }): UseQueryResult<TData, TError> & { queryKey: QueryKey } {
           const { query: queryOptions } = options ?? {};
           const queryKey = queryOptions?.queryKey ?? getQueryKey(params);
           
           const query = useQuery<TData, TError>({
-            ...getQueryOptions<TData>(params),
+            ...getQueryOptions<TData, TError>(params),
             ...queryOptions
           }) as UseQueryResult<TData, TError> & { queryKey: QueryKey };
 

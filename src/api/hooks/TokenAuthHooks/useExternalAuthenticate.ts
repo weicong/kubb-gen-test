@@ -1,4 +1,4 @@
-import type { useMutation, UseMutationOptions } from "@tanstack/react-query";
+import { useMutation, UseMutationOptions } from "@tanstack/react-query";
 import client from "../../../utils/axios-client";
 import type { ExternalAuthenticateRequest, ExternalAuthenticateResponse } from "../../models/TokenAuthModels/ExternalAuthenticate";
 

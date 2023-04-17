@@ -1,4 +1,4 @@
-import type { useQuery, QueryKey, UseQueryResult, UseQueryOptions, QueryOptions } from "@tanstack/react-query";
+import { useQuery, QueryKey, UseQueryResult, UseQueryOptions, QueryOptions } from "@tanstack/react-query";
 import client from "../../../utils/axios-client";
 import type { GetAllPermissionsResponse } from "../../models/RoleModels/GetAllPermissions";
 
@@ -6,7 +6,7 @@ import type { GetAllPermissionsResponse } from "../../models/RoleModels/GetAllPe
         export const getAllPermissionsQueryKey = () => [`/api/services/app/Role/GetAllPermissions`] as const;
       
 
-      export function getAllPermissionsQueryOptions <TData = GetAllPermissionsResponse>(): QueryOptions<TData> {
+      export function getAllPermissionsQueryOptions <TData = GetAllPermissionsResponse, TError = unknown>(): QueryOptions<TData, TError> {
         const queryKey =getAllPermissionsQueryKey();
 
         return {
@@ -24,12 +24,12 @@ import type { GetAllPermissionsResponse } from "../../models/RoleModels/GetAllPe
         /**
 * @link /api/services/app/Role/GetAllPermissions
 */
-        export function useGetAllPermissions <TData = GetAllPermissionsResponse, TError = unknown>(options?: { query?: UseQueryOptions<TData> }): UseQueryResult<TData, unknown> & { queryKey: QueryKey } {
+        export function useGetAllPermissions <TData = GetAllPermissionsResponse, TError = unknown>(options?: { query?: UseQueryOptions<TData, TError> }): UseQueryResult<TData, TError> & { queryKey: QueryKey } {
           const { query: queryOptions } = options ?? {};
           const queryKey = queryOptions?.queryKey ?? getAllPermissionsQueryKey();
 
           const query = useQuery<TData, TError>({
-            ...getAllPermissionsQueryOptions<TData>(),
+            ...getAllPermissionsQueryOptions<TData, TError>(),
             ...queryOptions
           }) as UseQueryResult<TData, TError> & { queryKey: QueryKey };
 

@@ -1,4 +1,4 @@
-import type { useQuery, QueryKey, UseQueryResult, UseQueryOptions, QueryOptions } from "@tanstack/react-query";
+import { useQuery, QueryKey, UseQueryResult, UseQueryOptions, QueryOptions } from "@tanstack/react-query";
 import client from "../../../utils/axios-client";
 import type { GetRoleForEditResponse, GetRoleForEditQueryParams } from "../../models/RoleModels/GetRoleForEdit";
 
@@ -6,7 +6,7 @@ import type { GetRoleForEditResponse, GetRoleForEditQueryParams } from "../../mo
         export const getRoleForEditQueryKey = (params?: GetRoleForEditQueryParams) => [`/api/services/app/Role/GetRoleForEdit`, ...(params ? [params] : [])] as const;
       
 
-        export function getRoleForEditQueryOptions <TData = GetRoleForEditResponse>(params?: GetRoleForEditQueryParams): QueryOptions<TData> {
+        export function getRoleForEditQueryOptions <TData = GetRoleForEditResponse, TError = unknown>(params?: GetRoleForEditQueryParams): QueryOptions<TData, TError> {
           const queryKey =getRoleForEditQueryKey(params);
 
           return {
@@ -25,12 +25,12 @@ import type { GetRoleForEditResponse, GetRoleForEditQueryParams } from "../../mo
         /**
 * @link /api/services/app/Role/GetRoleForEdit
 */
-        export function useGetRoleForEdit <TData = GetRoleForEditResponse, TError = unknown>(params?: GetRoleForEditQueryParams, options?: { query?: UseQueryOptions<TData> }): UseQueryResult<TData, TError> & { queryKey: QueryKey } {
+        export function useGetRoleForEdit <TData = GetRoleForEditResponse, TError = unknown>(params?: GetRoleForEditQueryParams, options?: { query?: UseQueryOptions<TData, TError> }): UseQueryResult<TData, TError> & { queryKey: QueryKey } {
           const { query: queryOptions } = options ?? {};
           const queryKey = queryOptions?.queryKey ?? getRoleForEditQueryKey(params);
           
           const query = useQuery<TData, TError>({
-            ...getRoleForEditQueryOptions<TData>(params),
+            ...getRoleForEditQueryOptions<TData, TError>(params),
             ...queryOptions
           }) as UseQueryResult<TData, TError> & { queryKey: QueryKey };
 
